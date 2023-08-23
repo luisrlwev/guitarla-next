@@ -28,8 +28,8 @@
     transition-duration: 300ms;
 }
 
-.navegacion a:hover{
-    color: var(--primary);
+.navegacion a:hover, .active{
+    background-color: var(--primary);
 }
 
 @media (min-width: 768px) {
