@@ -1,5 +1,4 @@
 import Layout from "@/components/layout"
-import Link from "next/link"
 
 export default function Nosotros() {
   return (
@@ -7,8 +6,7 @@ export default function Nosotros() {
       title={'Nosotros'}
       description={'Aprende sobre GuitarLA, su historia y más.'}
     >
-        Desde nosotros.js
-        <Link href="/">Ir a inicio</Link>
+        <h1>Nosotros</h1>
     </Layout>
   )
 }
