@@ -9,6 +9,7 @@ export default function Producto({guitarra}) {
   return (
     <Layout
         title={`Guitarra ${nombre}`}
+        description={`Encuentra todo lo relacionado con la guitarra ${nombre} y no te quedes sin la tuya.`}
     >
     <div className={styles.guitarra}>
       <Image src={imagen.data.attributes.url} width={600} height={400} alt={`Guitarra ${nombre}`}/>
