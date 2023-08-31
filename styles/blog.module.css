@@ -26,6 +26,7 @@
 }
 .texto {
     white-space: pre-wrap;
+    text-align: justify;
 }
 
 .mt-3 {
