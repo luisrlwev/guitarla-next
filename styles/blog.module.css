@@ -11,7 +11,7 @@
     margin: 0;
 }
 .contenido a{
-    color: var(--primary);
+    color: var(--black);
     text-decoration: none;
 }
 .fecha {
