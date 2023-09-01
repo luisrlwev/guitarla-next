@@ -11,7 +11,7 @@ export default function Post({post}) {
     <article>
         <Link href={`/blog/${url}`}><Image src={imagen.data.attributes.formats.medium.url} width={600} height={400} alt={`Blog sobre ${titulo}`}/></Link>
         <div className={styles.contenido}>
-            <h3><Link href={`/blog/${url}`}>{titulo}</Link></h3>
+            <h3><Link href={`/blog/${url}`} className={styles.tituloBlog}>{titulo}</Link></h3>
             <p className={styles.fecha}>{formatearFecha(publishedAt)}</p>
             <p className={styles.resumen}>{contenido}</p>
             <Link href={`/blog/${url}`} className={styles.enlace}>Leer post</Link>
