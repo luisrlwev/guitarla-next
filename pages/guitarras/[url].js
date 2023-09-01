@@ -17,6 +17,15 @@ export default function Producto({guitarra}) {
         }
 
         // Construir un objeto
+        const guitarraSeleccionada = {
+            id: guitarra[0].id,
+            imagen: imagen.data.attributes.url,
+            nombre,
+            precio,
+            cantidad
+        }
+
+        // Pasando la información al context
     }
 
   return (
