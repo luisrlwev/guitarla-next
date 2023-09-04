@@ -3,7 +3,7 @@ import Image from "next/image"
 import styles from "@/styles/guitarras.module.css"
 import Layout from "@/components/layout"
 
-export default function Producto({guitarra}) {
+export default function Producto({guitarra, agregarCarrito}) {
 
     const [cantidad, setCantidad] = useState(0)
     const { nombre, descripcion, imagen, precio } = guitarra[0].attributes
@@ -26,6 +26,7 @@ export default function Producto({guitarra}) {
         }
 
         // Pasando la información al context
+        agregarCarrito(guitarraSeleccionada)
     }
 
   return (
