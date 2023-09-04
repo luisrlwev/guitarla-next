@@ -15,7 +15,7 @@ export default function Carrito({carrito}) {
                     <h2>Articulos</h2>
                     {carrito.length === 0 ? 'Carrito vacío': (
                         carrito.map(producto => (
-                            <div key={producto.id} className="styles.producto">
+                            <div key={producto.id} className={styles.producto}>
                                 <div>
                                     <Image width={250} height={480} src={producto.imagen} alt={producto.nombre}/>
                                 </div>
